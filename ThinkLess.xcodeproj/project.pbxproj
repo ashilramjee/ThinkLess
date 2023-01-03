@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EAC870DD295F0D46005BCE35 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC870DC295F0D46005BCE35 /* CoreGraphics.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		EAEAC03C295E1672005AF860 /* ThinkLessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEAC03B295E1672005AF860 /* ThinkLessApp.swift */; };
-		EAEAC03E295E1672005AF860 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEAC03D295E1672005AF860 /* ContentView.swift */; };
 		EAEAC040295E1673005AF860 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAEAC03F295E1673005AF860 /* Assets.xcassets */; };
 		EAEAC043295E1673005AF860 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAEAC042295E1673005AF860 /* Preview Assets.xcassets */; };
+		EAEAC04B295E1F95005AF860 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEAC04A295E1F95005AF860 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EAC870DC295F0D46005BCE35 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		EAEAC038295E1672005AF860 /* ThinkLess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThinkLess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAEAC03B295E1672005AF860 /* ThinkLessApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThinkLessApp.swift; sourceTree = "<group>"; };
-		EAEAC03D295E1672005AF860 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EAEAC03F295E1673005AF860 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAEAC042295E1673005AF860 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EAEAC044295E1673005AF860 /* ThinkLess.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ThinkLess.entitlements; sourceTree = "<group>"; };
+		EAEAC04A295E1F95005AF860 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +29,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAC870DD295F0D46005BCE35 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EAC870DB295F0D46005BCE35 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EAC870DC295F0D46005BCE35 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EAEAC02F295E1672005AF860 = {
 			isa = PBXGroup;
 			children = (
 				EAEAC03A295E1672005AF860 /* ThinkLess */,
 				EAEAC039295E1672005AF860 /* Products */,
+				EAC870DB295F0D46005BCE35 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,9 +65,9 @@
 			isa = PBXGroup;
 			children = (
 				EAEAC03B295E1672005AF860 /* ThinkLessApp.swift */,
-				EAEAC03D295E1672005AF860 /* ContentView.swift */,
 				EAEAC03F295E1673005AF860 /* Assets.xcassets */,
 				EAEAC044295E1673005AF860 /* ThinkLess.entitlements */,
+				EAEAC04A295E1F95005AF860 /* AppDelegate.swift */,
 				EAEAC041295E1673005AF860 /* Preview Content */,
 			);
 			path = ThinkLess;
@@ -139,7 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAEAC03E295E1672005AF860 /* ContentView.swift in Sources */,
+				EAEAC04B295E1F95005AF860 /* AppDelegate.swift in Sources */,
 				EAEAC03C295E1672005AF860 /* ThinkLessApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,6 +216,7 @@
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -257,6 +270,7 @@
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -272,6 +286,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ThinkLess/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -297,6 +312,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ThinkLess/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
